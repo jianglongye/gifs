@@ -1,0 +1,14 @@
+__pycache__
+.idea
+.DS_Store
+*.so
+build/
+*.pyc
+*.c
+*.cpp
+/trash
+!.gitkeep
+*.err
+*.out
+start_job*
+*.zip

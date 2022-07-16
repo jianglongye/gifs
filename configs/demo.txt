@@ -1,0 +1,7 @@
+exp_name = demo
+data_dir = datasets/demo_dataset/data/demo_category/
+split_file = datasets/demo_dataset/data/demo_category.npz
+input_data_glob = /*/model.obj
+sample_std_dev = [0.08, 0.02, 0.003]
+sample_ratio = [0.01, 0.49, 0.5]
+batch_size = 1
