@@ -8,7 +8,7 @@ This repository is the official implementation for GIFS introduced in the paper:
 
 [Project Page](https://jianglongye.com/gifs/) / [ArXiv](https://arxiv.org/abs/2204.07126) / [Video](https://youtu.be/71luhEF75T0)
 
-## Table of content
+## Table of Content
 
 * [Environment Setup](#environment-setup)
 * [Demo](#demo)
@@ -45,7 +45,7 @@ conda install -c conda-forge igl
 
 ## Demo
 
-Download our pretrained model from [here](https://drive.google.com/drive/folders/1RPhi2EqCw2NnlPAusohCeZiW136XpHsL?usp=sharing) and put it in the `PROJECT_ROOT/experiments/gifs_demo/checkpoints` directory.
+Download our pretrained model from [here](https://drive.google.com/drive/folders/1RPhi2EqCw2NnlPAusohCeZiW136XpHsL?usp=sharing) and put it in the `PROJECT_ROOT/experiments/demo/checkpoints` directory.
 
 Run demo with the following command:
 
@@ -53,7 +53,7 @@ Run demo with the following command:
 python generate.py --config configs/demo.txt
 ```
 
-Some meshes are generated in the `PROJECT_ROOT/experiments/gifs_demo/evaluation/generation/` directory. You can check them in [meshlab](https://www.meshlab.net/). Note that we do not make normals from neighbouring faces point to the same direction, so you may need to enable the `back face -> double` option in meshlab for better visualization.
+Some meshes are generated in the `PROJECT_ROOT/experiments/demo/evaluation/generation/` directory. You can check them in [meshlab](https://www.meshlab.net/). Note that we do not make normals from neighbouring faces point to the same direction, so you may need to enable the `back face -> double` option in meshlab for better visualization.
 
 ## Data Preparation
 
