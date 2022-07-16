@@ -14,7 +14,9 @@ This repository is the official implementation for GIFS introduced in the paper:
 
 ## Visualization
 
-![asset-ball](assets/ball.gif) ![asset-bus](assets/bus.gif)
+Multi-layer ball | Bus with seats inside
+:----:|:----:
+![](assets/ball.gif) | ![](assets/bus.gif)
 
 ## Table of Content
 
