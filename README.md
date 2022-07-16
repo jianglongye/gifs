@@ -3,23 +3,34 @@
 This repository is the official implementation for GIFS introduced in the paper:
 
 > GIFS: Neural Implicit Function for General Shape Representation  
-> [*Jianglong Ye*](https://jianglongye.com/), [*Yuntao Chen*](https://scholar.google.com/citations?user=iLOoUqIAAAAJ), [*Naiyan Wang*](https://winsty.net/), [*Xiaolong Wang*](https://xiaolonw.github.io/)  
+> [_Jianglong Ye_](https://jianglongye.com/), [_Yuntao Chen_](https://scholar.google.com/citations?user=iLOoUqIAAAAJ), [_Naiyan Wang_](https://winsty.net/), [_Xiaolong Wang_](https://xiaolonw.github.io/)  
 > CVPR, 2022
 
 [Project Page](https://jianglongye.com/gifs/) / [ArXiv](https://arxiv.org/abs/2204.07126) / [Video](https://youtu.be/71luhEF75T0)
 
+<div align="center">
+  <img src="assets/arch.png" width="80%">
+</div>
+
+## Visualization
+
+<div align="center">
+  <img src="assets/ball.gif" width="40%">
+  <img src="assets/bus.gif" width="40%">
+</div>
+
 ## Table of Content
 
-* [Environment Setup](#environment-setup)
-* [Demo](#demo)
-* [Data Preparation](#data-preparation)
-* [Run](#run)
-* [Citation](#citation)
-* [Acknowledgement](#acknowledgement)
+- [Environment Setup](#environment-setup)
+- [Demo](#demo)
+- [Data Preparation](#data-preparation)
+- [Run](#run)
+- [Citation](#citation)
+- [Acknowledgement](#acknowledgement)
 
 ## Environment Setup
 
-PyTorch with CUDA support are required, please follow the [official installation guide](https://pytorch.org/get-started/locally/). 
+PyTorch with CUDA support are required, please follow the [official installation guide](https://pytorch.org/get-started/locally/).
 
 (Our code is tested on python 3.9, torch 1.8.0, CUDA 11.1 and RTX 3090)
 
@@ -95,12 +106,14 @@ python dataprocessing/preprocess.py --config configs/shapenet_cars.txt
 
 ## Run
 
+We provide a pretrained model [here](https://drive.google.com/drive/folders/1RPhi2EqCw2NnlPAusohCeZiW136XpHsL?usp=sharing).
+
 ### Training
 
 Run the following command to train the model:
 
 ```sh
-python ddp_train.py --config configs/shapenet_cars.txt 
+python ddp_train.py --config configs/shapenet_cars.txt
 ```
 
 ### Generation
@@ -113,7 +126,7 @@ python generate.py --config configs/shapenet_cars.txt
 
 ## Citation
 
-```
+```bibtex
 @inproceedings{ye2022gifs,
   title={GIFS: Neural Implicit Function for General Shape Representation},
   author={Ye, Jianglong and Chen, Yuntao and Wang, Naiyan and Wang, Xiaolong},
