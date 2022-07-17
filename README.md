@@ -9,7 +9,7 @@ This repository is the official implementation for GIFS introduced in the paper:
 [Project Page](https://jianglongye.com/gifs/) / [ArXiv](https://arxiv.org/abs/2204.07126) / [Video](https://youtu.be/71luhEF75T0)
 
 <div align="center">
-  <img src="assets/arch.png" width="80%" />
+  <img src="assets/arch.jpg" width="80%" />
 </div>
 
 ## Visualization
