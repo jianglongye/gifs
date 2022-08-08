@@ -1,7 +1,7 @@
 import gc
 import os
 
-import igl
+import point_cloud_utils as pcu
 import numpy as np
 import trimesh
 
@@ -137,8 +137,8 @@ def generate_labels(path):
     ds_labels = np.concatenate([ds_surface_labels, ds_bbox_labels, ds_space_labels], axis=0)
 
     # get udf
-    df0 = np.abs(igl.signed_distance(ds_sample_pairs[:, :3], mesh.vertices, mesh.faces)[0])
-    df1 = np.abs(igl.signed_distance(ds_sample_pairs[:, 3:], mesh.vertices, mesh.faces)[0])
+    df0 = np.abs(pcu.closest_points_on_mesh(ds_sample_pairs[:, :3].copy(), mesh.vertices, mesh.faces)[0])
+    df1 = np.abs(pcu.closest_points_on_mesh(ds_sample_pairs[:, 3:].copy(), mesh.vertices, mesh.faces)[0])
     df = np.concatenate([df0[:, None], df1[:, None]], axis=1)
 
     # get grid_coords

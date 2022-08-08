@@ -443,6 +443,8 @@ class GIFSGenerator(object):
         )
         vs, fs = np.array(list(vs.keys())), np.array(fs) - 1
 
+        # vs, fs = self.mesh_refine(vs, fs, inputs)  # better quantitative performance
+
         duration = time.time() - start
 
         return vs, fs, duration

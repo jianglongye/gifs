@@ -59,9 +59,9 @@ def to_off(path):
 
             mesh.apply_translation(-centers)
             # 0.9 is for the border issue
-            mesh.apply_scale(0.9 / total_size)
-            # 1 is the original size in NDF.
-            # mesh.apply_scale(1 / total_size)
+            # mesh.apply_scale(0.9 / total_size)
+            # 1 is the original size in NDF, better performance
+            mesh.apply_scale(1 / total_size)
             mesh.export(output_file)
 
         print("Finished: {}".format(path))
