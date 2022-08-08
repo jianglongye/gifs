@@ -14,9 +14,9 @@ This repository is the official implementation for GIFS introduced in the paper:
 
 ## Visualization
 
-Multi-layer ball | Bus with seats inside
-:----:|:----:
-![](assets/ball.gif) | ![](assets/bus.gif)
+|   Multi-layer ball   | Bus with seats inside |
+| :------------------: | :-------------------: |
+| ![](assets/ball.gif) |  ![](assets/bus.gif)  |
 
 ## Table of Content
 
@@ -41,7 +41,7 @@ trimesh
 tqdm
 numba
 scipy # for data preparation
-igl # for data preparation
+point_cloud_utils # for data preparation
 
 wandb # (optional, for training)
 ```
@@ -49,8 +49,7 @@ wandb # (optional, for training)
 Installation instruction:
 
 ```sh
-pip install configargparse trimesh tqdm numba scipy wandb
-conda install -c conda-forge igl
+pip install configargparse trimesh tqdm numba scipy point_cloud_utils wandb
 ```
 
 ## Demo
