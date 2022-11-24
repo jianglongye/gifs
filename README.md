@@ -54,7 +54,7 @@ pip install configargparse trimesh tqdm numba scipy point_cloud_utils wandb
 
 ## Demo
 
-Download our pretrained model from [here](https://drive.google.com/drive/folders/1RPhi2EqCw2NnlPAusohCeZiW136XpHsL?usp=sharing) and put it in the `PROJECT_ROOT/experiments/demo/checkpoints` directory.
+Download our pretrained model from [here](https://drive.google.com/drive/folders/1RPhi2EqCw2NnlPAusohCeZiW136XpHsL?usp=sharing) and put it in the `PROJECT_ROOT/experiments/demo/checkpoints` directory. Note that there is no need to unpack the tar file, the full path should be `PROJECT_ROOT/experiments/demo/checkpoints/checkpoint_44h:0m:56s_158456.50156092644.tar`. On some platforms, the colon (`"`) in the filename may be replaced by other symbols like a space (` `), please rename it back.
 
 Run demo with the following command:
 
@@ -79,14 +79,14 @@ apt install libcgal-dev
 Compile the label generation code with following commands:
 
 ```sh
-cd PROJECT_ROOT/data_processing/intersection_detection/
+cd PROJECT_ROOT/dataprocessing/intersection_detection/
 mdkir build
 cd build
 cmake -DCMAKE_BUILD_TYPE=Release ..
 make
 ```
 
-Or, we provide a precompiled binary file (static linking) for ubuntu which can be downloaded from [here](https://drive.google.com/drive/folders/12tprVMHvNpE0OwyW1g5HAkE2SdVndCj4?usp=sharing). After downloading, put the binary file to `PROJECT_ROOT/data_processing/intersection_detection/build/` and change the permission of the binary file:
+Or, we provide a precompiled binary file (static linking) for ubuntu which can be downloaded from [here](https://drive.google.com/drive/folders/12tprVMHvNpE0OwyW1g5HAkE2SdVndCj4?usp=sharing). After downloading, put the binary file to `PROJECT_ROOT/dataprocessing/intersection_detection/build/` and change the permission of the binary file:
 
 ```sh
 chmod +x intersection
@@ -104,7 +104,7 @@ python dataprocessing/preprocess.py --config configs/shapenet_cars.txt
 
 ## Run
 
-We provide a pretrained model [here](https://drive.google.com/drive/folders/1RPhi2EqCw2NnlPAusohCeZiW136XpHsL?usp=sharing).
+We provide a pretrained model [here](https://drive.google.com/drive/folders/1RPhi2EqCw2NnlPAusohCeZiW136XpHsL?usp=sharing). Please put it into the corresponding directory according to the config file you are using.
 
 ### Training
 
