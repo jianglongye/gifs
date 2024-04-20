@@ -54,7 +54,7 @@ pip install configargparse trimesh tqdm numba scipy point_cloud_utils wandb
 
 ## Demo
 
-Download our pretrained model from [here](https://drive.google.com/drive/folders/1RPhi2EqCw2NnlPAusohCeZiW136XpHsL?usp=sharing) and put it in the `PROJECT_ROOT/experiments/demo/checkpoints` directory. Note that there is no need to unpack the tar file, the full path should be `PROJECT_ROOT/experiments/demo/checkpoints/checkpoint_44h:0m:56s_158456.50156092644.tar`. On some platforms, the colon (`"`) in the filename may be replaced by other symbols like a space (` `), please rename it back.
+Download our pretrained model from [here](https://drive.google.com/drive/folders/1RPhi2EqCw2NnlPAusohCeZiW136XpHsL?usp=sharing) and put it in the `PROJECT_ROOT/experiments/demo/checkpoints` directory. Note that there is no need to unpack the tar file, the full path should be `PROJECT_ROOT/experiments/demo/checkpoints/checkpoint_44h:0m:56s_158456.50156092644.tar`. On some platforms, the colon (`:`) in the filename may be replaced by other symbols like a space (` `), please rename it back.
 
 Run demo with the following command:
 
